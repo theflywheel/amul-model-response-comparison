@@ -1,0 +1,27 @@
+{
+  "name": "model-response-comparison-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "validate:csv": "node validate-csv.mjs",
+    "csv:migrate": "node convert-to-new-csv.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "papaparse": "^5.4.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  }
+}
